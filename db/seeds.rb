@@ -13,7 +13,7 @@ Category.create(category:"exercise")
 
 Category.all.each do |category|
     rand(2...7).times do
-        ToDoList.create(content:Faker::Lorem.sentence(word_count: 6),category_id:category.id,created_at:Faker::Time.backward(days: 15, period: :all, format: :long))
+        ToDoList.create(content:Faker::Lorem.sentence(word_count: 6),category_id:category.id,created_at:Faker::Time.backward(days: 15, period: :all, format: :short))
     end
 end
 
